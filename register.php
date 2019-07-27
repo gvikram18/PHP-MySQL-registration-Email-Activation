@@ -5,6 +5,7 @@
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3">
 
+			<?php validate_user_registration(); ?>
 								
 		</div>
 
@@ -31,7 +32,13 @@
 								<form id="register-form" method="post" role="form" >
 
 									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required >
+										<input type="text" name="first_name" id="first_name" tabindex="1" class="form-control" placeholder="First Name" value="" required >
+									</div>											
+									<div class="form-group">
+										<input type="text" name="last_name" id="last_name" tabindex="1" class="form-control" placeholder="Last Name" value="" required >
+									</div>
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="User Name" value="" required >
 									</div>
 									<div class="form-group">
 										<input type="email" name="email" id="register_email" tabindex="1" class="form-control" placeholder="Email Address" value="" required >
